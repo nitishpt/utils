@@ -26,6 +26,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'mbbill/undotree'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
+Plugin 'ervandew/supertab'
 
 " Add plugins here
 
