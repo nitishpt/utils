@@ -20,6 +20,9 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 
+set nocompatible
+filetype off
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -27,6 +30,7 @@ Plugin 'mbbill/undotree'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'ervandew/supertab'
+Plugin 'psf/black'
 
 " Add plugins here
 
