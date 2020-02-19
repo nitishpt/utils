@@ -30,7 +30,6 @@ Plugin 'mbbill/undotree'
 Plugin 'junegunn/fzf.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'ervandew/supertab'
-Plugin 'psf/black'
 
 " Add plugins here
 
@@ -39,5 +38,3 @@ set rtp+=~/.fzf
 
 call vundle#end()
 filetype plugin indent on
-
-autocmd FileType python map <buffer> <F1> :call Flake8()<CR>
