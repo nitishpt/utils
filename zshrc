@@ -8,7 +8,7 @@ export ZSH="/Users/nitishpant/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -65,7 +65,7 @@ ZSH_THEME="robbyrussell"
 
 # ssh-agent settings that must come before sourcing oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent identities github.com
+zstyle :omz:plugins:ssh-agent identities #Add identities here
 zstyle :omz:plugins:ssh-agent lifetime 120h
 
 # Which plugins would you like to load?
@@ -129,8 +129,11 @@ export PATH=$PATH:/usr/local/go/bin
 
 set -o vi
 source <(kubectl completion zsh)
-source <(helm completion zsh)
+#source <(helm completion zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
