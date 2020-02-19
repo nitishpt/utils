@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/FRACTAL/nitish.pant/.oh-my-zsh"
+export ZSH="/Users/nitishpant/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -65,7 +65,7 @@ ZSH_THEME="robbyrussell"
 
 # ssh-agent settings that must come before sourcing oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent agent-forwarding on
-zstyle :omz:plugins:ssh-agent identities genie-1.server genie-2.server genie-3.server genie-4.server github.com
+zstyle :omz:plugins:ssh-agent identities github.com
 zstyle :omz:plugins:ssh-agent lifetime 120h
 
 # Which plugins would you like to load?
@@ -120,6 +120,9 @@ alias :q='echo You are not editing a file, dummy.'
 alias :wq=':q'
 alias sl='ls'
 alias kubeclt='kubectl'
+
+#ssh to genie server
+alias mkserver='ssh nitish.pant@genie.server'
 
 #Golang PATH environment variable
 export PATH=$PATH:/usr/local/go/bin
